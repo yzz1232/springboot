@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-Title: SpringBot Maven Webapp
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: zzy
+Build-Jdk: 1.7.0_79
+Built-By: Administrator
+Created-By: Maven Integration for Eclipse
+
