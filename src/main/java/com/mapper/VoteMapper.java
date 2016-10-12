@@ -8,9 +8,6 @@ import com.entity.Vote;
 
 public interface VoteMapper {
 	
-	@Select("select voteId,userId from vote")
-	public List<Vote> getAllVote();
+	public int getAllVote();
 	
-	@Transactional("")
-	public int insert();
 }

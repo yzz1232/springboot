@@ -22,7 +22,7 @@ public class HelloController {
 	
 	@RequestMapping("/")
 	@ResponseBody
-	public List<Vote> hello(){
+	public int hello(){
 		return voteMapper.getAllVote();
 	}
 	
