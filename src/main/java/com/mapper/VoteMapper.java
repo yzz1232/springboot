@@ -10,4 +10,6 @@ public interface VoteMapper {
 	
 	public int getAllVote();
 	
+	public int getActivity();
+	
 }

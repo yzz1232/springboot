@@ -3,6 +3,10 @@
 <mapper namespace="com.mapper.VoteMapper" >
 	
 	<select id="getAllVote" resultType="java.lang.Integer">
+		select count(0) from activity
+	</select>
+	
+	<select id="getActivity" resultType="java.lang.Integer">
 		select count(0) from vote
 	</select>
  	

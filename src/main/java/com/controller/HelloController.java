@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.entity.Vote;
 import com.mapper.VoteMapper;
+import com.server.MulipDataSource;
 import com.service.IHelloService;
 
 @RestController  
@@ -23,7 +24,11 @@ public class HelloController {
 	@RequestMapping("/")
 	@ResponseBody
 	public int hello(){
-		return voteMapper.getAllVote();
+		MulipDataSource.setDataSourceKey("two");
+		int i = voteMapper.getAllVote();
+		MulipDataSource.setDataSourceKey("one");
+		int j = voteMapper.getActivity();
+		return i+j;
 	}
 	
 }
